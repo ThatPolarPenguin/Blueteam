@@ -8,7 +8,7 @@ def change_password(user_list):
     for user in user_list:
         try:
             # Run the 'passwd' command to change the password
-            subprocess.run(['sudo', 'passwd', user], input='StarWars\nStarWars\n', text=True, check=True)
+            subprocess.run(['sudo', 'passwd', user], input='CHANGEME\nCHANGEME\n', text=True, check=True)
             print(f"Password for user {user} changed!")
         except subprocess.CalledProcessError as e:
             print(f"Error changing password for user {user}: {e}")
