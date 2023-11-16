@@ -25,7 +25,7 @@ def restore(source_dir, destination_dir):
 
 if __name__ == "__main__":
     # Specify the source and destination directories
-    source_directory = '/home/student/Desktop/testing'
+    source_directory = '/home/user/Desktop/testing'
     destination_directory = '/backup'
 
     # Create the destination directory if it doesn't exist
@@ -35,6 +35,6 @@ if __name__ == "__main__":
     copy_directory(source_directory, destination_directory)
 
     #while True:
-        restore('/backup/testing', '/home/student/Desktop')
+        restore('/backup/testing', '/home/user/Desktop')
         time.sleep(30)
 
